@@ -9,6 +9,7 @@ This project is an Express server that provides an API to validate Canadian Soci
 - [API Endpoint](#api-endpoint)
 - [Error Handling](#error-handling)
 - [Testing](#testing)
+- [RateLimite](#rate-limiter)
 
 ## Installation
 
@@ -87,6 +88,17 @@ The API returns appropriate HTTP status codes for various error scenarios:
 
 This project includes unit tests using Jest. You can run the tests with the following command:
 
+- It will test the Validation Class
+- It will test the http process
+
 ```bash
 pnpm run test
+```
+
+### Rate Limiter
+
+- Every 60 seconds there is a limit of 10 attemps per IP request, if you want to modify this, you can do it in
+
+```bash
+vim middleware/rateLimit.ts
 ```
