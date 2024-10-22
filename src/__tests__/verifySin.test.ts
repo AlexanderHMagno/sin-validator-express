@@ -1,5 +1,5 @@
 import SinValidator from '../utils/Validator';
-import { fakeValidSins } from './sinFakeNumbers';
+import { fakeValidSins } from '../utils/sinFakeNumbers';
 
 describe('verifySin', () => {
   it('should return an error if the SIN does not have 9 digits', async () => {
