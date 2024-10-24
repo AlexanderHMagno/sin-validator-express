@@ -1,5 +1,9 @@
 import express from 'express';
 import sinRouter from './routers/sinRouter';
+import dotenv from 'dotenv';
+
+//Add .env variables
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;

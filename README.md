@@ -50,8 +50,16 @@ Response Structure:
 
 To validate a SIN, make a GET request to the endpoint with a valid SIN:
 
+Express Logic
+
 ```bash
 CURL http://localhost:3001/api/validate/046454286
+```
+
+Request Next.js Api
+
+```bash
+CURL http://localhost:3001/api/validate-next/046454286
 ```
 
 ### Example Response
